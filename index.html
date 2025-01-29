@@ -48,7 +48,7 @@
             z.textContent = 'z';
             z.className = 'z';
             z.style.left = Math.random() * window.innerWidth + 'px';
-            z.style.animationDuration = (Math.random() * 1.5 + 0.5) + 's';
+            z.style.animationDuration = (Math.random() * 3 + 2) + 's';
             z.style.animation = `fall ${z.style.animationDuration} linear infinite`;
             
             document.body.appendChild(z);
@@ -58,7 +58,7 @@
             });
         }
 
-        setInterval(createZ, 50);
+        setInterval(createZ, 100);
     </script>
 </body>
 </html>
